@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6.
 
+## Project Details
+This project is built in Angualr 13.2 version. It uses Angualr materials and bootstarp to display inputs on GUI.
+Once we run the code, Application is by default navigated to Home page and on top we have a Navigation bar. 
+Using the navigation bar we can navigate to calculator and currency convertor.
+Calculator is completely buit on Typescript.
+Currency convertor is built using API's from fixerAPI. 
+Dropdowns data is displayed from symbols fixer API and Coverter is using convertor API.  
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
