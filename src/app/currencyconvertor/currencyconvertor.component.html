@@ -1,0 +1,38 @@
+<form id="ConvertorId" [formGroup]="convertorForm" autocomplete="off" novalidate>
+  <div class="container-fluid">
+    <div class="row">
+   
+  <mat-form-field class="col-sm-3"  appearance="fill">
+    <mat-label>Currency To</mat-label>
+    <mat-select (selectionChange)="onChange($event)" formControlName="to" >
+      <mat-option *ngFor="let k of currencyListfordropdown" [value]="k.key">{{k.value}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="col-sm-3" appearance="fill">
+  <mat-label>Currency From</mat-label>
+    <mat-select (selectionChange)="onChange($event)" formControlName="from">
+      <mat-option *ngFor="let k of currencyListfordropdown" [value]="k.key">{{k.value}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+ 
+  <mat-form-field class="col-sm-3" appearance="fill">
+    <mat-label>Currency</mat-label>
+  <input  matInput type="text" formControlName="currency">
+  </mat-form-field>
+
+
+&nbsp;&nbsp;
+<button class="col-sm-2" mat-raised-button color="primary"  (click)="GetConvertedData()" >Submit</button>
+</div>
+<br>
+<div class="row" >
+
+<mat-form-field  appearance="fill">
+  <mat-label>Converted Value</mat-label>
+<input  matInput type="text" formControlName="convertedValue">
+</mat-form-field></div>
+
+</div>
+</form>
+

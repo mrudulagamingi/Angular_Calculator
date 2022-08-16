@@ -11,11 +11,9 @@ export class AppComponent {
   constructor(private postService:PostService){}
   ngOnInit()
   {
-    this.postService.getPost('INR','USD','5').subscribe((result: any)=>{
-   console.log("result",result)
-   this.data=result
-    })
+  //   this.postService.getPost('INR','USD','5').subscribe((result: any)=>{
+  //  console.log("result",result)
+  //  this.data=result
+  //   })
   }
 }
-
-
